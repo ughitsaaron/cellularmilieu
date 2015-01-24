@@ -1,0 +1,21 @@
+{
+  "name": "Project",
+  "version": "0.0.0",
+  "authors": [
+    "Aaron Petcoff <hello@aaronpetcoff.me>"
+  ],
+  "homepage": "http://aaronpetcoff.me/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.1.1",
+    "neat": "~1.7.1",
+    "normalize.css": "~3.0.2"
+  }
+}
