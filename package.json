@@ -4,6 +4,9 @@
   "description": "A project",
   "author": "Aaron Petcoff",
   "homepage": "http://aaronpetcoff.me",
+  "scripts": {
+    "postinstall":"mv scss/components/normalize.css/normalize.css scss/components/normalize.css/_normalize.scss"
+  },
   "private": true,
   "devDependencies": {
     "gulp": "^3.8.10",
@@ -11,7 +14,7 @@
     "gulp-livereload": "^3.5.0",
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.3.2",
+    "gulp-ruby-sass": "^1.0.0-alpha.2",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.2"
   }
