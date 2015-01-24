@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
     gutil = require('gulp-util'),
+    connect = require('gulp-connect'),
     livereload = require('gulp-livereload');
  
 // compile paths
@@ -51,6 +52,13 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest(paths.scripts.dest))
   .pipe(livereload());
 });
+
+// dev server
+gulp.task('serve', function() {
+  connect.server({
+    livereload:true
+  });
+});
  
 // watch
 gulp.task('watch', function() {
@@ -61,4 +69,4 @@ gulp.task('watch', function() {
 });
  
 // default task
-gulp.task('default', ['watch','styles','scripts']);
+gulp.task('default', ['watch','serve','styles','scripts']);
