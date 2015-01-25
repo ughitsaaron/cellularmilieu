@@ -1,6 +1,6 @@
 css/
 *.DS_Store
-scss/components
+#libs/
 node_modules
 npm-debug.log
 *.min.js
