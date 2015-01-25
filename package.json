@@ -5,7 +5,7 @@
   "author": "Aaron Petcoff",
   "homepage": "http://aaronpetcoff.me",
   "scripts": {
-    "postinstall": "mv scss/components/normalize.css/normalize.css scss/components/normalize.css/_normalize.scss"
+    "preinstall": "bower install",
   },
   "private": true,
   "devDependencies": {

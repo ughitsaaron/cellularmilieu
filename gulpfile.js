@@ -13,8 +13,8 @@ var gulp = require('gulp'),
  
 // compile paths
 var paths = {
-  markup: { src:['./**/*.html','!./**/*'] },
-  styles: { src:'./scss', files:'./scss/main.scss', dest:'./css' },
+  markup: { src:'./**/*.html' },
+  styles: { src:'./scss/**/*', files:'./scss/main.scss', dest:'./css' },
   scripts: { src: './js/main.js', dest:'./js', ext:'main.min.js'}
 };
  
@@ -32,15 +32,15 @@ gulp.task('styles', function() {
     style: "compressed",
     noCache:true,
     loadPath: [
-      "scss/components/bourbon/app/assets/stylesheets/",
-      "scss/components/neat/app/assets/stylesheets/",
-      "scss/components/normalize.css/"
+      "libs/bourbon/app/assets/stylesheets/",
+      "libs/neat/app/assets/stylesheets/",
+      "libs/normalize.css/"
     ]
   })
   .pipe(plumber({errorHandler: onError}))
   .pipe(autoprefixer('last 2 versions'))
   .pipe(gulp.dest(paths.styles.dest))
-  .pipe(livereload());
+  .pipe(livereload({auto:false}));
 });
  
 // scripts
@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
   .pipe(uglify(paths.scripts.src))
   .pipe(rename(paths.scripts.ext))
   .pipe(gulp.dest(paths.scripts.dest))
-  .pipe(livereload());
+  .pipe(livereload({auto:false}));
 });
 
 // dev server
@@ -63,7 +63,7 @@ gulp.task('serve', function() {
 // watch
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(paths.styles.files, ['styles']);
+  gulp.watch(paths.styles.src, ['styles']);
   gulp.watch(paths.scripts.src, ['scripts']);
   gulp.watch(watchPaths).on('change', livereload.changed);
 });

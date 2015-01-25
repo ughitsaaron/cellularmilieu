@@ -1,3 +1,40 @@
 // global settings
+
 $border-box-sizing:true;
 $max-width:rem(1200);
+
+// breakpoints
+
+$medium: new-breakpoint(min-width rem(768));
+$large: new-breakpoint(min-width rem(1024));
+
+$type: (
+  headings:"'Lato', sans-serif",
+  body:"'Droid Serif', serif"
+);
+
+@function type($key) {
+  @if map-has-key($type, $key) {
+    @return unquote(map-get($type,$key));
+  }
+
+  @warn "Unknown `#{$key}` in $type.";
+  @return null;
+}
+
+$colors: (
+  primary:#3F5E9B,
+  secondary: #8EC3F2,
+  tertiary: #F7E188,
+  dark: #40434E,
+  light: #EFEFEF
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors,$key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

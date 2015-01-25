@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Droid+Serif' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cellular mileu | design &amp; animation | new york</title>
+  <link rel="stylesheet" href="libs/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <div class="wrap">
+    <header class="big title">
+      <div class="contain">
+        <h1 class="header-title">cellular mileu</h1>
+        <h3 class="header-description">design &amp; animation</h3>
+        <h3 class="header-description header-city">made in nyc</h3>
+      </div>
+    </header>
+    <main>
+      <section class="big lede-tagline">
+        <div class="contain">
+          <h3>Cellular Milieu is a design and animation studio that specializes in cellular biology.</h3>
+          <div class="overlay"></div>
+          <video autoplay muted preload="auto" loop>
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.webm" type="video/webm">
+          </video>
+        </div>
+      </section>
+      <section class="big lede-work">
+        <div class="contain">
+          <h3>Our work is modern and magnetic, well suited to be shared online for others to discover.</h3>
+          </div>
+      </section>
+      <section class="big lede-clients">
+        <div class="contain">
+          <h3>We have clients from university laboratories, science publications, and private companies from around the world.</h3>
+        </div>
+      </section>
+      <section class="big contact">
+        <div class="contain">
+          <h3>Pricing is offered on a sliding scale to provide more scientists access to our services. Send a short description of the project, your company, and your timeline to get started.</h3>
+          <form name="contact" id="form">
+            <input type="name" class="contact-name" placeholder="Name" required>
+            <input type="tel" class="contact-phone" placeholder="Phone" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}">
+            <input type="email" class="contact-email" placeholder="Email" required>
+            <textarea class="contact-message" placeholder="Message" required></textarea>
+            <div class="contact-confirm"></div>
+            <button type="submit">Submit</button>
+          </form>
+          <a href="mailto:info@cellularmilieu.com" class="contact-alt">or write info [at] cellularmilieu [dot] [com]</a></p>
+        </div>
+        <footer>
+          <div class="contain">
+            <span class="footer-copyright">&copy; 2015 Cellular Milieu</span>
+            <span class="footer-credit"> | Design &amp; Development by <a href="http://aaronpetcoff.me">Aaron Petcoff</a></span>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div><!-- .wrap -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src='libs\/jquery\/dist\/jquery.min.js'><\/script>")</script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
