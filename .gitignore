@@ -3,4 +3,4 @@
 #libs/
 node_modules
 npm-debug.log
-*.min.js
+#*.min.js
