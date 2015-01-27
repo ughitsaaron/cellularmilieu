@@ -152,8 +152,8 @@ video {
 /* Our Work */
 
 .lede-work {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: color(secondary);
   
   @include media($medium) {
@@ -183,8 +183,7 @@ video {
 
 .contact {
   background-color: color(primary);
-  padding-top: 15rem;
-  // padding-bottom: 4rem;
+  padding-top: 10rem;
 
   h3 {
     color:color(light);
