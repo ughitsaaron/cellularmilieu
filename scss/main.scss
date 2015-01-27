@@ -41,20 +41,26 @@ a {
 }
 
 .big {
+  width: 100%;
+  min-height: 100vh;
   position: relative;
-  min-height: 110vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  display: table;
 
   &:not(:last-of-type) {
     box-shadow: inset 0 -3px 6px rgba(0,0,0,0.35);
   }
 }
 
+.big h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contain {
   @include outer-container();
+  display: table-cell;
+  vertical-align: middle;
   padding-left: 1em;
   padding-right: 1em;
 
@@ -85,7 +91,7 @@ header {
 }
 
 .header-title {
-  // font-size: 20vmin;
+  margin-top: 0px;
   font-size: rem(65);
 
   &:after {
@@ -167,13 +173,11 @@ video {
 
 .contact {
   background-color: saturate(color(tertiary), 10%);
-  padding-top: 4em;
-
-  @include media($medium) {
-    padding-top: 9em;
-  }
+  padding-top: 15rem;
+  // padding-bottom: 4rem;
 
   h3 {
+    margin-bottom: 3rem;
     text-shadow: 1px 1px rgba(color(light),0.55);
   }
 
@@ -182,15 +186,14 @@ video {
     display: block;
     width: 50%;
     height: rem(10);
-    margin: 0.6em auto 0 auto;
+    margin: 3rem auto 0 auto;
     background-color: color(primary);
     content: '';
   }
 }
 
-/* Contact */
-
 form {
+  margin-top: 3rem;
   margin-bottom: 1em;
 }
 
@@ -236,8 +239,13 @@ button {
 }
 
 footer {
-  font-size: 16px;
   padding-top:2em;
   padding-bottom:2em;
-  opacity:0.5;
+  background-color: saturate(color(tertiary), 10%);
+  font-size: 16px;
+  text-align: center;
+
+  span {
+    opacity:0.5;
+  }
 }

@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $(".big").height($(window).outerHeight());
+});
+
+$(document).ready(function() {
   "use strict";
 
   var formData = {};
