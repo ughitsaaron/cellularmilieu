@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $(".big").height($(window).outerHeight());
+  $("video")[0].play();
 });
 
 $(document).ready(function() {
