@@ -112,6 +112,59 @@ header {
   text-shadow: 1px 1px rgba(color(light),0.55);
 }
 
+.header-link {
+  display: inline-block;
+  margin-top: 2em;
+
+  svg {
+    width: rem(70);
+    height: rem(70);
+    display: block;
+    margin: auto;
+    transform: rotate(180deg);
+    fill: color(primary);
+  }
+}
+
+.nav-wrap {
+  position: fixed;
+  z-index: 100;
+  top:rem(40);
+  width: 100%;
+  text-align: center;
+}
+
+.nav-top {
+  position: relative;
+  background-color: rgba(color(tertiary),0.85);
+  display: inline-block;
+  width: rem(55);
+  height: rem(55);
+  border-radius: 50%;
+  opacity:0;
+  transform:translate3d(0,-150px,0);
+  transition-property: opacity, transform;
+  transition-duration: 1300ms;
+  transition-timing-function: ease;
+
+  &.visible {
+    opacity:1;
+    transform:translate3d(0,0,0);
+    transition-property: opacity, transform;
+    transition-duration: 1300ms;
+    transition-timing-function: ease;
+  }
+
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    fill:color(light);
+  }
+}
+
 /* Tagline / Video */
 
 .lede-tagline {
