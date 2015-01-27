@@ -157,29 +157,32 @@ video {
   h3 {
     text-shadow: 1px 1px rgba(color(light),0.55);
   }
-}
 
-/* Our Clients */
+  h3:first-child:after {
+    display: block;
+    width: 50%;
+    height: rem(10);
+    margin: 3rem auto 0 auto;
+    background-color: color(tertiary);
+    content: '';
+  }
 
-.lede-clients {
-  background-color: color(primary);
-  color:color(light);
-
-  h3 {
-    text-shadow: 1px 1px rgba(color(dark),0.55);
+  h3:last-child {
+    margin-top: 3rem;
   }
 }
 
 /* Contact */
 
 .contact {
-  background-color: saturate(color(tertiary), 10%);
+  background-color: color(primary);
   padding-top: 15rem;
   // padding-bottom: 4rem;
 
   h3 {
+    color:color(light);
     margin-bottom: 3rem;
-    text-shadow: 1px 1px rgba(color(light),0.55);
+    text-shadow: 1px 1px rgba(color(dark),0.55);
   }
 
 
@@ -188,8 +191,12 @@ video {
     width: 50%;
     height: rem(10);
     margin: 3rem auto 0 auto;
-    background-color: color(primary);
+    background-color: color(tertiary);
     content: '';
+  }
+
+  a {
+    color:color(tertiary);
   }
 }
 
@@ -224,6 +231,8 @@ button {
   padding-left:2em;
   padding-right:2em;
   box-shadow:inset -1px -1px 2px rgba(black,0.35);
+  background-color: color(dark);
+  color: color(light);
 
   &[disabled] {
     box-shadow:inset 1px 1px 2px rgba(black,0.35);
@@ -242,12 +251,19 @@ button {
 footer {
   padding-top:2em;
   padding-bottom:2em;
-  background-color: saturate(color(tertiary), 10%);
+  background-color: color(primary);
   font-size: 16px;
   text-align: center;
 
   span {
     opacity:0.5;
+  }
+
+  a:link,
+  a:active,
+  a:visited,
+  a:hover {
+    color: color(tertiary);
   }
 }
 
