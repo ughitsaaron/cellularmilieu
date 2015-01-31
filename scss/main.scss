@@ -42,6 +42,7 @@ a {
 
 .big {
   width: 100%;
+  min-height: 30em;
   min-height: 100vh;
   position: relative;
   text-align: center;
@@ -72,7 +73,7 @@ a {
 
 main {
   position: relative;
-  margin-top: 110vh;
+  margin-top: 100vh;
   background-color: color(light);
   box-shadow: 0 -2px 4px rgba(black,0.35);
 }

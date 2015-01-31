@@ -1,10 +1,11 @@
 (function($) {
+  "use strict";
 
   /* Autohider by Aaron Petcoff https://gist.github.com/aptkf/1a5ffdad876a80610b63 */
  
   $.fn.autohider = function(args) {
  
-    defaults = {
+    var defaults = {
       toggle: "visible",
       buffer:70,
       tolerance: 8
@@ -41,9 +42,6 @@
 
 $(document).ready(function() {
   "use strict";
-
-  $(".big").height($(window).outerHeight());
-  $("main").css("marginTop",$(window).outerHeight());
 
   (function() {
     var header = $('header').position().top+$('header').outerHeight(true);
