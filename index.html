@@ -7,10 +7,10 @@
   <title>cellular mileu | design &amp; animation | new york</title>
   <link rel="stylesheet" href="libs/normalize.css/normalize.css">
   <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
   <style>
     .vjs-control-bar { display: none; }
   </style>
-  <script src="http://vjs.zencdn.net/4.11/video.js"></script>
   <script src="js/modernizr.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -30,6 +30,7 @@
         <div class="contain">
           <img src="img/anim.gif" alt="Molecules of water coming to a boil">
           <h3>Cellular Milieu is a design and animation studio that specializes in cellular biology.</h3>
+          <a class="tagline-video fancybox fancybox.iframe" href="https://www.youtube.com/embed/5w7FuDuzqfg?enablejsapi=1&wmode=opaque"><svg class="header-link-arrow" viewBox="0 0 20 20"><use xlink:href="#youtube"></use></svg></a>
           <div class="overlay"></div>
           <video autoplay controls muted preload="auto" loop class="" data-setup='{"autoplay":true,"preload":"auto","loop":true,"width":0,"height":0}'>
             <source src="video/video.mp4" type="video/mp4">
@@ -65,9 +66,13 @@
   </div><!-- .wrap -->
   <svg style="display:none" width="0" height="0">
     <path id="chevron" d="M15.484 12.452c-0.436 0.446-1.043 0.481-1.576 0l-3.908-3.747-3.908 3.747c-0.533 0.481-1.141 0.446-1.574 0-0.436-0.445-0.408-1.197 0-1.615 0.406-0.418 4.695-4.502 4.695-4.502 0.217-0.223 0.502-0.335 0.787-0.335s0.57 0.112 0.789 0.335c0 0 4.287 4.084 4.695 4.502s0.436 1.17 0 1.615z"></path>
+    <path id="youtube" d="M10 2.3c-9.828 0-10 0.874-10 7.7s0.172 7.7 10 7.7 10-0.874 10-7.7-0.172-7.7-10-7.7zM13.205 10.334l-4.49 2.096c-0.393 0.182-0.715-0.022-0.715-0.456v-3.948c0-0.433 0.322-0.638 0.715-0.456l4.49 2.096c0.393 0.184 0.393 0.484 0 0.668z"></path>
   </svg>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>window.jQuery || document.write("<script src='libs\/jquery\/dist\/jquery.min.js'><\/script>")</script>
   <script src="js/main.min.js"></script>
+  <script src="http://vjs.zencdn.net/4.11/video.js" async></script>
+  <script src="http://www.youtube.com/player_api"></script>
+  <script src="libs/fancybox/source/jquery.fancybox.js"></script>>
 </body>
 </html>

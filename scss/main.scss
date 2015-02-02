@@ -192,6 +192,15 @@ header {
   box-shadow: inset 0 -5px 12px rgba(0,0,0,0.65);
 }
 
+.tagline-video {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  margin-top: 2em;
+  fill:color(tertiary);
+  width:rem(100);
+}
+
 video, .lede-tagline img {
   position: absolute;
   bottom: 0;
