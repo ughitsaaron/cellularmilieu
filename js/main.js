@@ -96,7 +96,7 @@ $(document).ready(function() {
 
       $.ajax({
         dataType:"jsonp",
-        url:"http://getsimpleform.com/messages/ajax?form_api_token=d9661666346512e9947ea6fca1bcddf8",
+        url:"http://getsimpleform.com/messages/ajax?form_api_token=73c1d46b39e675e7fca674e839f9513d",
         data: formData
       }).done(function() {
         $("#contact").addClass("success");
