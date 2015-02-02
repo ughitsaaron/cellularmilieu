@@ -352,3 +352,12 @@ footer {
   }
 }
 
+.footer-share {
+  display: block;
+}
+
+.footer-share a {
+  display: inline-block;
+  width: rem(20);
+  fill: #292b32;
+}
